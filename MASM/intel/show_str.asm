@@ -23,6 +23,11 @@ start:
 	mov cl, 24h
 	mov ax, data
 	mov ds, ax
+
+	mov ax, stack
+	mov ss, ax
+	mov sp, 32
+	
 	mov si, 0
 	call show_str
 
